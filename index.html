@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tathagat</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/handsfree@8.5.1/build/lib/assets/handsfree.css"
+    />
+    <script src="https://unpkg.com/handsfree@8.5.1/build/lib/handsfree.js"></script>
+    <!-- <script src="/handsfree-master/src/handsfree.js"></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="/TagCloud-master/dist/TagCloud.js"></script>
+    <script src="/starback.js-main/dist/starback.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-light navbar-expand-lg fixed-top"
+      style="background-color: #525e65"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse custom-class" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item pe-2">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-white" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-white" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="nav-link text-white" href="#proj">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="resume/slider.html"
+                target="_blank"
+                >RESUME</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          class="rounded-pill text-white hand handsfree-show-when-stopped handsfree-hide-when-loading"
+          onclick="toggleModel('hands')"
+          style="background-color: black; width: 170px; height: 35px"
+        >
+          Start Hand Tracking
+        </button>
+        <button
+          class="rounded-pill text-white hand handsfree-show-when-loading"
+          disabled
+        >
+          Loading ...
+        </button>
+        <button
+          class="rounded-pill text-white hand handsfree-show-when-started handsfree-hide-when-loading"
+          onclick="handsfree.stop()"
+        >
+          Stop Handsfree
+        </button>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <section class="evrything">
+      <!-- The Whole Top Design -->
+      <section id="home">
+        <canvas id="canvas"></canvas>
+        <script>
+          const canvas = document.getElementById("canvas");
+          const starback = new Starback(canvas, {
+            height: 1080,
+            width: 1920,
+            type: "line",
+            backgroundColor: ["#252B39", "#252B39"],
+            speed: 5,
+            frequency: 5,
+            slope: { x: -1, y: 11 },
+            directionX: 1,
+            speed: 2,
+            spread: -10,
+            randomOpacity: true,
+            quantity: 30,
+            starSize: 2,
+          });
+        </script>
+        <div class="container1">
+          <div class="half-ellipse"></div>
+          <p class="cuss-font text-white">HI, I'M</p>
+          <p class="h1 cus-font text-white">
+            <span class="head1">&lt;h1&gt;</span>TATHAGAT MAITRAY<span
+              class="head1"
+              >&lt;/h1&gt;</span
+            >
+          </p>
+          <p class="text-white cus-font3">I Build Things For Web!</p>
+          <div id="debugger-holder"></div>
+          <!-- My Image Design -->
+          <img class="mm mx-auto d-block" src="/images/mypic.jpg" alt="mypic" />
+          <!-- My Image Design -->
+
+          <!-- The Typewriter Text -->
+          <h1 class="text-center">
+            <a
+              href="#"
+              class="typewrite"
+              data-period="2000"
+              data-type='[ "I am a Web Developer.", "I am Creative.", "I am an Engineering Student.", "I Love to Develop.", "I am a Cyber Security Enthusiast", "I am an Artist"  ]'
+            >
+              <span class="wrap"></span>
+            </a>
+          </h1>
+        </div>
+      </section>
+      <!-- The Whole Top Design -->
+      <!-- About Section -->
+      <section class="about-sec" id="about">
+        <p class="h2 about">ABOUT</p>
+        <div class="underline mx-auto d-block"></div>
+        <div class="container-fluid py-5 ff">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <img
+                  class="img-fluid rounded mb-5 mb-lg-0"
+                  src="images/myimg1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-7 myintro">
+                <p>
+                  I am Web Developer located in India. I am currently persuing my
+                  B. Tech In Computer Science. I love to explore different fields
+                  and faces of technology, my resume will tell you the same thing.
+                </p>
+                <p>I am happy to roll up my sleeves and build great things</p>
+                <a href="#contact" class="btn btn-primary mt-2 py-2 px-4 cbutt"
+                  >CONTACT ME</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="ff ">
+              <img class="img-fluid myimg" src="images/myimg1.jpg" alt="Personal Image">
+              <p class="myintro">I am Web Developer located in India. I am currently persuing my B. Tech In Computer Science. I love to explore different fields and faces of technology, my resume will tell you the same thing.</p><p class="myintro2">I am happy to roll up my sleeves and build great things.</p>
+          </div> -->
+      </section>
+      <!-- skills section -->
+      <section class="skills" id="skills">
+        <p class="h2 skillsh">SKILLS</p>
+        <div class="underline mx-auto d-block"></div>
+        <!-- skillbar -->
+        <div class="skillbar">
+          <div class="wrapper">
+            <div class="container1">
+              <div class="label one">Frontend</div>
+              <div class="progress-bar">
+                <div class="progress fill-1">
+                  <div class="glow"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container1">
+              <div class="label two">Backend</div>
+              <div class="progress-bar">
+                <div class="progress fill-3">
+                  <div class="glow"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container1">
+              <div class="label three">React Js</div>
+              <div class="progress-bar">
+                <div class="progress fill-2">
+                  <div class="glow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- skillbar -->
+        <!-- animated globe -->
+        <div class="animglobe">
+          <span class="content1"></span>
+        </div>
+      </section>
+      <!-- projects -->
+      <section class="proj" id="proj">
+        <p class="h2 project">PROJECTS</p>
+        <div class="underline mx-auto d-block"></div>
+        <div class="slider">
+          <div class="projects container-fluid">
+            <div
+              id="carouselExampleControls"
+              class="carousel"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/Capture.PNG"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Movie Manifest</h5>
+                      <p class="card-text">
+                        Simple Movie Information and Random Movie Suggester Build
+                        With HTML, CSS, JS & REST API
+                      </p>
+                      <a
+                        href="https://tathagat22.github.io/Movie-Manifest/"
+                        class="btn button btn-dark"
+                        >Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img
+                        src="images/occult.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Occult API</h5>
+                      <p class="card-text">
+                        Simple Occult API build with NODE, Express, & JSON Server
+                      </p>
+                      <a
+                        href="https://github.com/tathagat22/occult-api"
+                        class="btn btn-dark"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="images/w.PNG" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">KryStruments</h5>
+                      <p class="card-text">
+                        Web for playing instuments with you keyboard, Build with
+                        Tailwind CSS, HTMl, CSS, JS
+                      </p>
+                      <a
+                        href="https://tathagat22.github.io/KeyInstruments/"
+                        class="btn btn-dark"
+                        >Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <p class="h2 contact">CONTACT</p>
+        <div class="underline mx-auto d-block"></div>
+        <div class="connect">
+          <div class="tel">
+            <a href="tel:+917982713102"
+              ><img src="images/icons8-phone-50.png" alt="" />+91 7982713102</a
+            >
+          </div>
+          <div class="mail">
+            <a href="mailto:tathagatmaitray@gmail.com"
+              ><img
+                src="images/icons8-mail-50.png"
+                alt=""
+              />tathagatmaitray@gmail.com</a
+            >
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/tathagat-maitray-37a112201/"
+              ><img src="images/icons8-linkedin-circled-50.png" alt="" /> Tathagat
+              Maitray</a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
+    <script>
+      const handsfree = new Handsfree({
+        // Show debug inside a specific element
+        showDebug: false,
+        setup: {
+          wrap: {
+            $parent: document.querySelector('#debugger-holder')
+          }
+        }
+      })
+  
+      // Enable browser plugins
+      handsfree.enablePlugins('browser')
+  
+      // Toggle Model
+      // @todo Actually add this to Handsfree
+      function toggleModel(name) {
+        const config = {}
+        config[name] = !handsfree.model[name].enabled
+        config.autostart = true
+        handsfree.update(config)
+      }
+    </script>
+  </body>
+  <script src="index.js"></script>
+</html>

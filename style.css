@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color: #252B39;
+    /* overflow: hidden; */
+}
+nav {
+    font-family: 'Titillium Web', sans-serif !important;
+    -webkit-box-shadow: 0px 7px 4px 0px rgba(30,30,30,1) !important;
+    -moz-box-shadow: 0px 7px 4px 0px rgba(30,30,30,1) !important;
+    box-shadow: 0px 7px 4px 0px rgba(30,30,30,1) !important;
+}
+.hand {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 17px;
+    /* margin-left: 47px; */
+    text-align:right;
+}
+.cus-font{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 6vw;
+    text-align: center;
+    /* margin-top: -225px; */
+}
+.cuss-font{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 24px;
+    text-align: center;
+    margin-top: -235px;
+}
+.cus-font3{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.mm{
+    border-radius: 50%;
+    height: 213px;
+    width: 213px;
+    margin-top: 70px;
+    padding: 30px;
+    /* text-align: center !important; */
+}
+.typewrite{
+    text-decoration: none;
+    color: #fff;
+    text-shadow:
+    0 0 5px #25d7fb,
+    0 0 10px #25d7fb,
+    0 0 15px #25d7fb,
+    0 0 20px #25d7fb,
+    0 0 25px #25d7fb,
+    0 0 30px #25d7fb
+    ;
+
+    font-family: 'Josefin Sans', sans-serif !important;
+
+}
+.typewrite:hover{
+    text-decoration: none;
+    color: #fff;
+    text-shadow:
+    0 0 5px #25d7fb,
+    0 0 10px #25d7fb,
+    0 0 15px #25d7fb,
+    0 0 20px #25d7fb,
+    0 0 25px #25d7fb,
+    0 0 30px #25d7fb
+    ;
+    cursor: none;
+}
+.custom-class{
+    justify-content: center !important;
+}
+canvas{
+    height: 300vw;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.half-ellipse { 
+    border-radius: 50%;
+    background: #2E3445;
+    width: 100%;
+    height: 520px;
+    margin-top: -270px;
+}
+.head1{
+    font-size: 20px !important;
+    font-family: 'Italianno';
+    color: #969595;
+    
+}
+.about{
+    color: #DAF9C3;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 300 !important;
+    text-align: center;
+    margin-top: 240px;
+    
+}
+.skillsh{
+    color: #DAF9C3;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 300 !important;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.flexing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.underline{
+    height: 7px;
+    width: 270px;
+    background-color: #DAF9C3;
+    
+}
+#home{
+    height: 100vh;
+}
+
+/* .mypic{
+    border-radius: 10% !important;
+    height: 36em;
+} */
+
+.myintro{
+    color: #fff !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 27px;
+    /* text-align: center; */
+}
+.ff{
+    margin-top: 50px;
+}
+.cbutt{
+    border: 3px solid #DAF9C3;
+    border-radius: 9px !important;
+    background-color: #252B39;
+}
+.cbutt:hover{
+    border: 3px solid #DAF9C3;
+    color: black;
+    background-color: #DAF9C3;
+}
+.cbutt:focus{
+    border: 3px solid #DAF9C3 !important;
+    color: black; 
+    background-color: #DAF9C3;
+    box-shadow: 0 0 0 0.25rem #252B39;
+}
+.skillbar{
+    margin-right: 800px;
+    margin-top: 100px;
+    font-style: 'Josefin Sans', sans-serif !important;
+}
+.tagcloud {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+    width: 1em;
+  }
+.tagcloud--item:hover {
+    color: #5adb36;
+  }
+.animglobe{
+    float: right;
+    margin-top: -300px;
+}
+.project{
+    color: #DAF9C3;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 300 !important;
+    text-align: center;
+    margin-top: 300px;
+}
+.contact{
+    color: #DAF9C3;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 300 !important;
+    text-align: center;
+    margin-top: 170px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.connect{
+    font-size: 35px;
+    margin-top: 100px;
+}
+.slider{
+    margin-top: 120px;
+}
+.projects{
+    background-color: #252B39;
+    width: 88%;
+    border: 3px solid #DAF9C3 !important;
+    border-radius: 15px;
+  }
+  .card{
+    background-color: #252B39;
+    border: 3px solid #DAF9C3 !important;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .card-body{
+    background-color: #DAF9C3 !important;
+    color: #000 !important;
+  }
+  .carousel-inner {
+      padding: 1em;
+    }
+    .card {
+      margin: 0 0.5em;
+      box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+      border: none;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: #e1e1e1;
+      width: 6vh;
+      height: 6vh;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    @media (min-width: 768px) {
+      .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+      }
+      .carousel-inner {
+        display: flex;
+      }
+    }
+    .card .img-wrapper {
+        max-width: 100%;
+        height: 13em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card img {
+        max-height: 100%;
+    }
+    @media (max-width: 767px) {
+      .card .img-wrapper {
+        height: 17em;
+      }
+    }
+@media only screen and (max-width:576px) {
+    .custom-class{
+       justify-content:inherit ;
+    }
+    .half-ellipse{
+        border-radius: 0;
+        height: 490px;
+    }
+    .cus-font{
+        font-size: 2.5rem;
+    }
+    .cuss-font{
+        margin-top: -190px;
+    }
+    .head1{
+        display: none;
+    }
+    .skillbar{
+        margin-right: 0px;
+        margin-top: 100px;
+    }
+    .animglobe{
+        margin-top: 0px;
+    }
+}
+@media only screen 
+and (min-device-width : 580px) 
+and (max-device-width : 1024px) {
+    .skillbar{
+        margin-right: 400px;
+        margin-top: 100px;
+    }
+}

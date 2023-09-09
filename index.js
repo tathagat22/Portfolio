@@ -63,7 +63,7 @@ const myTags = [
     'Python', 'MongoDB', 'git',
      'Node.js', 'Cybersecurity',
     'Express', 'MySQL', 'jQuery','SCSS','SEO',
-    'Rest API', 'Networking', 'Linux', 'Wordpress'
+    'Rest API', 'Networking', 'Linux', 'Wordpress', 'prismadb', 'NextJS', 'TypeScript'
 ];
 if (phoneQuery.matches){
     var tagCloud = TagCloud('.content1', myTags,{
